@@ -1378,9 +1378,6 @@ if(typeof(net.imapbuilder.gmap.firstRun)==="undefined"){
 						g.closeInfoWindow();
 						infowindow = new google.maps.InfoWindow();
 						var infocontent = "<strong>"+options.title+"</strong><br/>"+options.description; 
-						if(quota<=0 || plan==0){
-							infocontent+="<br /><br /><a href=\"https://www.imapbuilder.net/\">Powered by iMapBuilder</a>";
-						}
 						if(options.data.maxwidth==0){
 							infowindow.setOptions({content:infocontent,position:new google.maps.LatLng(lat, lng)});
 						}else{
